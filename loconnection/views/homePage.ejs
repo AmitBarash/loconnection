@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html dir="rtl">
+    <head>
+        <title>loconnection - home page</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="/font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+        <style>
+            .center
+            {
+                align-content: center;
+                text-align: center;
+            }
+            #find-connection
+            {
+                background-color: white; 
+                height: 55vh;
+                padding-top: 5vh;
+                display: flex;
+            }
+            #find-friend
+            {
+                /* background-color: #941010; */
+                /* color: white; */
+            }
+            button{
+                background-color: rgb(255, 51, 51);
+                height: 10vh;
+                width: 30vh;
+                font-size: 130%;
+            }
+            .block
+            {
+                border: 2px solid black;
+                border-radius: 25px;
+                box-shadow: 10px 10px 5px darkgray;
+            }
+            #common-hobbies
+            {
+                margin-top: 5vh;
+                height: 44.5vh;
+            }
+            .main-block
+            {
+                height: 90vh;
+                margin-top: 5vh;
+
+            }
+            #ad
+            {
+                padding-top: 20vh;
+                height: 40vh;
+                margin-top: 5vh;
+                border: 2px solid black;
+                border-radius: 25px;
+            }
+            #conver-topic
+            {
+                height: 45vh;
+                padding-right: 2vw;
+            }
+            #main
+            {
+                padding-left: 2.5vw;
+                padding-right: 2.5vw;
+            }
+            #profile
+            {
+                height: 45vh;
+            }
+            #avatar
+            {
+                border-radius: 100%;
+                border: 2px solid black;
+                height: 15vh;
+                width: 15vh;
+                margin-right: 8vw;
+                margin-top: 3vh;
+            }
+            ul.nobulls
+            {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+            .last-friend
+            {
+                width: 100%;
+                height: 5vh;
+                padding-top: 0.5vh;
+            }
+            .last-friend:hover
+            {
+                background-color: rgb(241, 241, 241);
+            }
+            .circle
+            {
+                border-radius: 100%;
+                border: 2px solid black;
+                height: 4vh;
+                width: 2vw;
+                /* margin-top: 0.5vh; */
+            }
+            #common-hobbies{
+                height: 30vh;
+            }
+            .footer{
+                background-color: black;
+                color: white;
+                padding: 25px;
+                height: 25vh;
+                width: 100%;
+                margin-top: 5vh;
+            }
+            .footer:hover
+            {
+                background-color: #941010;
+            }
+            a
+            {
+                font-size: 50px;
+                text-decoration: none;
+                color: white;
+            }
+            a:hover
+            {
+                color: white;
+                text-decoration: none;
+            }
+            .errors
+            {
+                padding-right: 5vw;
+            }
+            .icon
+            {
+                font-size: 20px;
+                height: 20px;
+                width: 20px;
+                color: white;
+            }
+            #mouse-gif
+            {
+                height: 200px;
+                width: 150px;
+            }
+            #logo
+            {
+                height: 60px;
+                width: 300px;
+                size: 20ch;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container-fluid" id="main">
+            <div class="row">
+                <div class="col-3 main-block container-fluid" id="first">
+                    <div class="row block" id="profile">
+                        <div id="avatar"></div>
+                        <div class=""><p>שם משתמש:</p></div>
+                        <div class=""><p>גיל:</p></div>
+                        <div class=""><p>מגדר:</p></div>
+                        <div class=""><p>התחביבים שלי:</p></div>
+                    </div>
+                    <div class="row block" id="ad">
+                        <p>כאן באה מודעה לפרסום האתר של הקבוצה השנייה</p>
+                    </div>
+                </div>
+
+                <div class="col-6 main-block" id="second">
+                    <div class="container-fluid">
+                        <div class="row block">
+                            <div class="col-1"></div>
+                            <div class="col-10" id="find-connection">
+                                <img src="cl.gif" id="mouse-gif"/>
+                                <button id="find-friend">מצא חבר והתחבר 🙂</button>
+                            </div>
+                            <div class="col-1"></div>
+                        </div>
+                        <div class="row block" id="common-hobbies">
+                            <div class="col-6">
+                                <ul><u><b><p>תחביבים נפוצים</p></u></b>
+                                    <li>ספורט</li>
+                                    <li>תכנות ובניית אתרים</li>
+                                    <li>אמנות</li>
+                                    <li>קריאה</li>
+                                    <li>גיימינג ומשחקי מחשב</li>
+                                    <li>מוזיקה</li>
+                                    <li>טיולים בטבע</li>
+                                </ul>
+                            </div>
+                            <div class="col-6" id="conver-topic">
+                                <ul><u><b><p>נושאים להתחלת שיחה</p></b></u>
+                                    <li>מה אתה אוהב לראות בטלוויזיה?</li>
+                                    <li>מה אתה עושה היום?</li>
+                                    <li>כמה אחים יש לך? </li>
+                                    <li>מה המקום המועדף עליך?</li>
+                                    <li>מה אתה עושה בזמנך הפנוי?</li>
+                                    <li>מה אתה אוהב לאכול?</li>
+                                    <li>מה התחומי עניין שלך?</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 block main-block" id="third">
+                    <ul class="nobulls">
+                        <br>
+                        <img id="logo" src="Logo2.png"/>
+                        <br>
+                        <p class="center"><b><u>התאמות אחרונות</u></b></p>
+                        <li class="last-friend">
+                            <div class="container-fluid">
+                                <div class="row center">
+                                    <div class="col-2 circle"></div>
+                                    <div class="col-10">
+                                        <p> שם משתמש של התאמה אחרונה</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="last-friend">                            
+                            <div class="container-fluid">
+                                <div class="row center">
+                                    <div class="col-2 circle"></div>
+                                    <div class="col-10">
+                                        <p> שם משתמש של התאמה אחרונה</p>
+                                    </div>
+                                </div>
+                            </div></li>
+                        <li class="last-friend">                            
+                            <div class="container-fluid">
+                                <div class="row center">
+                                    <div class="col-2 circle"></div>
+                                    <div class="col-10">
+                                        <p> שם משתמש של התאמה אחרונה</p>
+                                    </div>
+                                </div>
+                            </div></li>
+                        <li class="last-friend">                            
+                            <div class="container-fluid">
+                                <div class="row center">
+                                    <div class="col-2 circle"></div>
+                                    <div class="col-10">
+                                        <p> שם משתמש של התאמה אחרונה</p>
+                                    </div>
+                                </div>
+                            </div></li>
+                        <li class="last-friend">                            
+                            <div class="container-fluid">
+                                <div class="row center">
+                                    <div class="col-2 circle"></div>
+                                    <div class="col-10">
+                                        <p> שם משתמש של התאמה אחרונה</p>
+                                    </div>
+                                </div>
+                            </div></li>
+                        <li class="last-friend">                            
+                            <div class="container-fluid">
+                                <div class="row center">
+                                    <div class="col-2 circle"></div>
+                                    <div class="col-10">
+                                        <p> שם משתמש של התאמה אחרונה</p>
+                                    </div>
+                                </div>
+                            </div></li>
+                        <li class="last-friend">                            
+                            <div class="container-fluid">
+                                <div class="row center">
+                                    <div class="col-2 circle"></div>
+                                    <div class="col-10">
+                                        <p> שם משתמש של התאמה אחרונה</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid footer">
+            <div class="row errors">
+                <div class="col-4">
+                    <p>מצאתם בעיה או תקלה? דווחו לנו</p>
+                    <p>* המייל שלנו *</p>
+                    <p>* הטלפון של המוקד *</p>
+                </div>
+                <div class="col-4">
+                    <p>קצת עלינו: קבוצת LOconnection
+                        <br>
+                        הפעילות שלנו הייתה מאתגרת.
+                        חילקנו את המשימות בנינו ככה שכל אחד התמקד במה שהוא טוב בו.
+                        הייתה לנו עבודת צוות כאשר התקשנו במשהו מסויים או נתקלנו בבעיה  נעזרנו אחד לשני לפתור אותה.
+                    </p>
+                </div>
+                <div class="col-4">
+                    <div class="container-fluid">
+                        <div class="row center">
+                            <div class="col-3"></div>
+                            <div class="col-3"></div>
+                            <div class="col-3"></div>
+                            <div class="col-3"></div>
+                        </div>
+                        <div class="row center">
+                            <div class="center container-fluid padding-top">
+                                <span>תעקבו אחרינו בפייסבוק או באינסטגרם!</span>
+                                <br>
+                                <span>אתם יכולים להסתכל גם על הקודים בקישור הגיטהאב שלנו!</span>
+                                <br><br>
+                                <!-- כפתור הפייסבוק -->
+                                <div class="row">
+                                    <div class="col-4 center icon">
+                                        <a href="https://he-il.facebook.com" title="facebook">
+                                            <i class="fa fa-facebook-official icon" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                    <!-- סוף כפתור הפייסבוק -->
+                        
+                                    <!-- כפתור אינסטגרם -->
+                                    <div class="col-4 center icon">
+                                        <a href="https://www.instagram.com/" title="instagram">
+                                            <i class="fa fa-instagram icon" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                    <!-- סוף כפתור אינסטגרם -->
+                        
+                                    <!-- the github button -->
+                                    <div class="col-4 center icon">
+                                        <a href="https://github.com/AmitBarash" title="github">
+                                            <i class="fa fa-github icon" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                    <!-- end of github button -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    </body>
+</html>
